@@ -36,6 +36,7 @@ export type Module = { name: string; route?: string; test: Function };
 // List of all modules for tests. Each file path must be statically present for
 // the packager to pick them all up.
 export function getTestModules() {
+  console.log('getTestModules', new Error('getTestModules').stack);
   const modules: Module[] = [
     // Sanity
     require('./tests/Basic'),
