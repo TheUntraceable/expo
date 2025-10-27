@@ -2,6 +2,7 @@ const path = require('node:path');
 
 const subdomain = process.env.EXPO_TUNNEL_SUBDOMAIN ?? 'expo-e2e-universal-linking';
 
+
 /** @type {import('expo/config').ExpoConfig} */
 module.exports = {
   name: 'Router E2E',
